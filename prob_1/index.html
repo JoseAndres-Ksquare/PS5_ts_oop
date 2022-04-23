@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hour counter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b7370c5621.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="container-grid">
+            <div class="user-info" id="item1">
+                <div class="user">
+                    <img class="profile-picture" src="./img/angie_pic.jpg" alt="profile picture"> 
+                    <div class="report">
+                        <p class="p-report">Report for</p>
+                        <p class="name"> Angélica </p>
+                        <p  class="name"> Ramírez </p>
+                    </div>
+                </div>
+                <div class="info">
+                    <a onclick="getDataDaily()" class="daily">Daily</a>
+                    <a onclick="getDataWeekly()" class="weekly">Weekly</a>
+                    <a onclick="getDataMonthly()" class="monthly">Monthly</a>
+                </div>
+            </div>
+            <div class="work-hours" id="item2">
+                <div class="back_work-hours"></div>
+                <div class="work">
+                    <div class="space-work">
+                        <div class="work-bar">
+                            <div class="fetch-work"></div>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <br>
+                        <div class="hours-work-container"></div>
+                        <div class="prev-hours-work-container"></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="play-hours"id="item3">
+                <div class="back_play-hours"></div>
+                <div class="play">
+                    <div class="space-play">
+                        <div class="play-bar">
+                            <div class="fetch-play"></div>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <br>
+                        <div class="hours-play-container"></div>
+                        <div class="prev-hours-play-container"></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="study-hours"id="item4">
+                <div class="back_study-hours"></div>
+                <div class="study">
+                    <div class="space-study">
+                        <div class="study-bar">
+                            <div class="fetch-study"></div>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <br>
+                        <div class="hours-study-container"></div>
+                        <div class="prev-hours-study-container"></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="exercise-hours"id="item5">
+                <div class="back_exercise-hours"></div>
+                <div class="exercise">
+                    <div class="space-exercise">
+                        <div class="exercise-bar">
+                            <div class="fetch-exercise"></div>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <br>
+                        <div class="hours-exercise-container"></div>
+                        <div class="prev-hours-exercise-container"></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="social-hours"id="item6">
+                <div class="back_social-hours"></div>
+                <div class="social">
+                    <div class="space-social">
+                        <div class="social-bar">
+                            <div class="fetch-social"></div>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <br>
+                        <div class="hours-social-container"></div>
+                        <div class="prev-hours-social-container"></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="selfCare-hours"id="item7">
+                <div class="back_selfCare-hours"></div>
+                <div class="selfCare">
+                    <div class="space-selfCare">
+                        <div class="selfCare-bar">
+                            <div class="fetch-selfCare"></div>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <br>
+                        <div class="hours-selfCare-container"></div>
+                        <div class="prev-hours-selfCare-container"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
